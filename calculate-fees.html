@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees - Empowering the Nation</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="six-month-courses.html">Six-Month Courses</a>
+            <a href="six-week-courses.html">Six-Week Courses</a>
+            <a href="calculate-fees.html">Calculate Fees</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+
+    <header>
+        <h1>Select Courses and Calculate Fees</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select Courses and Calculate Fees</h2>
+            <form id="courseForm">
+                <label>
+                    <input type="checkbox" name="course" value="1500"> First Aid (R1500)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="1500"> Sewing (R1500)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="1500"> Landscaping (R1500)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="1500"> Life Skills (R1500)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="750"> Child Minding (R750)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="750"> Cooking (R750)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="course" value="750"> Garden Maintenance (R750)
+                </label><br>
+                <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            </form>
+            <h3 id="totalCost">Total: R0</h3>
+        </section>
+
+        <!-- New Section: Get More Information -->
+        <section>
+            <h2>Get More Information</h2>
+            <p>Want to learn more about our courses or special offers? Explore the following resources:</p>
+            <ul>
+                <li><a href="course-details.html">Course Details</a> - Detailed descriptions and syllabus for each course.</li>
+                <li><a href="special-offers.html">Special Offers</a> - Current promotions and discounts on courses.</li>
+                <li><a href="contact.html">Contact Us</a> - Reach out to us with any questions or to schedule a consultation.</li>
+                <li><a href="faq.html">FAQ</a> - Find answers to common questions about our courses and fees.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            let checkboxes = document.querySelectorAll('input[name="course"]:checked');
+            let total = 0;
+            checkboxes.forEach((checkbox) => {
+                total += parseFloat(checkbox.value);
+            });
+
+            // Calculate discount
+            let numCourses = checkboxes.length;
+            let discount = 0;
+
+            if (numCourses === 2) {
+                discount = 0.05;
+            } else if (numCourses === 3) {
+                discount = 0.10;
+            } else if (numCourses > 3) {
+                discount = 0.15;
+            }
+
+            total = total - (total * discount);
+            document.getElementById('totalCost').innerText = `Total: R${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
