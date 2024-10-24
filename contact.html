@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Empowering the Nation</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     
@@ -29,7 +30,7 @@
             <p>The SME initiative, Empowering the Nation, was founded by Precious Radebe to provide skills training for domestic workers and gardeners. Precious was motivated by the lack of upskilling opportunities available to her parents and elderly relatives. This training school aims to enhance job marketability, enable higher pay, and support entrepreneurial ventures for domestic workers and gardeners. Our programs help individuals become more skilled, allowing them to start their own businesses or provide more specialized services to employers.</p>
 
             <h3>Contact Form</h3>
-            <form action="submit_form.php" method="post">
+            <form id="contactForm" action="submit_form.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
 
@@ -41,6 +42,22 @@
 
                 <button type="submit">Send Message</button>
             </form>
+
+            <h3>Our Location</h3>
+            <p>You can find us at:</p>
+            <p><strong>Empowering the Nation</strong><br>
+               123 Hope Street,<br>
+               Gardens, Cape Town,<br>
+               8001, South Africa</p>
+         
+               <!-- Embedded Google Maps -->
+            <section class="map">
+                <h3>Find Us on the Map</h3>
+                <iframe 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.297332541443!2d18.415135075799075!3d-33.93347997320193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6779913126e5%3A0x11a4d0557bd1fb6d!2s123%20Hope%20St%2C%20Gardens%2C%20Cape%20Town%2C%208001!5e0!3m2!1sen!2sza!4v1729205475908!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+                    ></iframe>
+            </section>
+
 
             <h3>Follow Us</h3>
             <p>Stay connected with us through social media:</p>
