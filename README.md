@@ -20,12 +20,14 @@ This section outlines the available six-month learnership programs, including:
 - **Sewing**: Master sewing techniques, garment construction, and fabric selection.
 - **Landscaping**: Gain hands-on experience in garden design, plant care, and sustainable landscaping.
 - **Life Skills**: Develop time management, financial literacy, and effective communication skills.
+- There are "Learn More Buttons" Next to each coure information to give more insight on what the course entails
 
 ### Six-Week Short Courses
 The six-week courses offer shorter, intensive training in areas such as:
 - **Cooking**: Learn essential cooking techniques, recipes, and kitchen safety.
 - **Garden Maintenance**: Understand plant care, basic landscaping, and seasonal gardening.
 - **Child Minding**: Study child development, safety protocols, and practical caregiving skills.
+- - There are "Learn More Buttons" Next to each coure information to give more insight on what the course entails
 
 ### Fee Calculator
 The fee calculator allows prospective students to estimate the cost of enrolling in the available courses. Users can select courses and calculate the total fees based on their preferences.
