@@ -1,5 +1,11 @@
 # Empowering the Nation Website
 
+# How to get in the website
+1.click on the github link
+2.unzip the folder and click on screens and click on any screen you would like to see
+
+             or
+
 # How to use the website
  1.open up VS code 
  2.Go live at the bottom right hand corner
